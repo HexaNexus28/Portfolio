@@ -39,7 +39,7 @@ const projects = [
         role: 'Front-End & React Developer – Personal Portfolio',
         resume: 'Création d’un portfolio interactif pour présenter mes projets et compétences, avec navigation fluide via React Router et design responsive pour mobile et desktop (2025, Durée : 1 mois)',
         github: "https://github.com/HexaNexus28/portfolio",
-        demo: "https://ton-portfolio.vercel.app/",
+        demo: "https://yawo-portfolio.vercel.app/",
         comingSoon: false
     },
     {
