@@ -13,6 +13,9 @@ function Navbar() {
         <Link to="/about" className="hover:text-blue-400 transition">
           About Me
         </Link>
+        <Link to="/cv" className="hover:text-blue-400 transition">
+          CV
+        </Link>
       </nav>
     </header>
   );

@@ -18,14 +18,13 @@ function About() {
           Yawo Zoglo
         </h1>
         <p className="text-xl text-center max-w-3xl mb-8 text-gray-300">
-          Développeur FullStack spécialisé dans la création d’applications web
-          performantes et d’expériences utilisateur intuitives. Je conçois des
-          solutions techniques sur mesure, des plateformes éducatives aux jeux
-          web interactifs, en alliant rigueur et créativité.
+          Apprenti <strong>Développeur Web & Mobile</strong> à l’ESIEA, j’aime
+          donner vie à des idées : transformer des lignes de code en expériences
+          fluides, utiles et parfois un peu ludiques.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center mb-10">
-          {["React", "Node.js", "PHP", "MySQL", "Tailwind CSS", "C#"].map(
+          {["React.js", "Node.js", "PHP", "MySQL", "Tailwind CSS", "C#"].map(
             (tech, i) => (
               <span
                 key={i}
@@ -41,22 +40,22 @@ function About() {
 
         <div className="max-w-3xl mb-12 text-center space-y-6 text-gray-300">
           <p>
-            Mon approche allie <strong>innovation technique</strong> et{" "}
-            <strong>design centré utilisateur</strong>. Je m’attache à optimiser
-            chaque ligne de code pour des performances optimales, tout en créant
-            des interfaces qui captivent.
+            Mon terrain de jeu : les <strong>applications interactives</strong>{" "}
+            et la <strong>gamification</strong>. Je m’inspire autant des{" "}
+            <strong>jeux de stratégie</strong> que des <strong>échecs</strong>,
+            pour allier créativité et réflexion analytique dans mes projets.
           </p>
           <p>
-            Hors des écrans,je m’inspire de jeux comme <em>Genshin Impact</em>{" "}
-            pour mes projets interactifs et la gamification. Je cultive ma{" "}
-            <strong>pensée stratégique</strong> à travers les échecs — une
-            passion qui affine ma capacité à résoudre des problèmes complexes.
+            Mon objectif ? <strong>Coder avec impact</strong> : des solutions
+            élégantes, performantes et pensées pour l’utilisateur.
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="mailto:zoglopiere20@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=zoglopiere20@gmail.com&su=Contact%20depuis%20portfolio&body=Bonjour%20Yawo%2C"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold
                        hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105
                        shadow-lg hover:shadow-xl flex items-center gap-2"

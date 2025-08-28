@@ -51,16 +51,44 @@ function Project() {
               </div>
 
               {!project.comingSoon && (
-                <div className="mt-4">
-                  <a
-                    href={project.link || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-600 font-medium"
-                  >
-                    <i className="fas fa-globe"></i> Voir le projet{" "}
-                    <i className="fas fa-external-link-alt text-sm"></i>
-                  </a>
+                <div className="mt-6 flex flex-wrap gap-4 justify-center">
+                  {/* Bouton GitHub */}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2 bg-gray-800 text-white rounded-full
+                   border border-gray-700 hover:bg-gray-700 transition-all duration-300 
+                   hover:scale-105 shadow-md"
+                    >
+                      <i className="fab fa-github"></i>
+                      Voir le code
+                    </a>
+                  )}
+
+                  {project.demo && project.demo.endsWith(".mp4") ? (
+                    <video
+                      src={project.demo}
+                      controls
+                      className="w-full rounded-lg mt-4 shadow-lg"
+                    />
+                  ) : !project.demo ? (
+                    ""
+                  ) : (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-600 
+                   text-white rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 
+                   transition-all duration-300 transform hover:scale-105 shadow-md"
+                    >
+                      <i className="fas fa-globe"></i>
+                      Voir en ligne
+                      <i className="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                  )}
                 </div>
               )}
             </li>

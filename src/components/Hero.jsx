@@ -17,20 +17,20 @@ function Hero() {
       </h1>
       <TypeAnimation
         sequence={[
-          "Développeur FullStack ",
+          "Développeur FullStack",
           1000,
-          "Je résous des problèmes grâce au code ",
+          "Je crée des solutions performantes et intuitives",
           1000,
-          "Fullstack Developer",
+          "FullStack Developer",
           1000,
-          "Solving problems through code.",
+          "Building elegant and efficient applications",
           1000,
         ]}
         wrapper="span"
         speed={50}
         deletionSpeed={120}
         repeat={Infinity}
-        className="text-3xl  text-green-300 drop-shadow-[0_0_8px_rgba(72,187,120,0.9)]"
+        className="text-3xl text-green-300 drop-shadow-[0_0_8px_rgba(72,187,120,0.9)]"
       />
     </section>
   );
