@@ -1,41 +1,78 @@
 import projects from "../data/projects";
+import Navbar from "../components/Navbar";
+
+import Footer from "../components/Footer";
 
 function Project() {
   return (
-    <section className="p-8 bg-gray-100">
-      {" "}
-      {/* background global pour le Project */}
-      <ul className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <li
-            key={project.id}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow"
-          >
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-700 mb-1">
-              <span className="font-medium">Rôle:</span> {project.role}
-            </p>
-            <p className="text-gray-700 mb-2">
-              <span className="font-medium">Résumé:</span> {project.resume}
-            </p>
-            <div className="flex flex-wrap gap-2 mt-2">
-              {project.technologies.map((image, index) => (
-                <div
-                  key={index}
-                  className="w-24 h-24 flex items-center justify-center bg-gray-200 rounded-lg"
-                >
-                  <img
-                    src={image}
-                    alt="technologies"
-                    className="object-contain w-20 h-20"
-                  />
+    <>
+      <Navbar />
+      <section className="p-8 bg-gray-800 min-h-screen">
+        <ul className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+          {projects.map((project) => (
+            <li
+              key={project.id}
+              className={`p-6 rounded-xl shadow-md transition-all duration-300
+              ${
+                project.comingSoon
+                  ? "bg-gray-700 text-gray-300"
+                  : "bg-gray-900 text-gray-100 hover:bg-gray-800 hover:shadow-xl"
+              }
+            `}
+            >
+              <h3 className="text-xl font-bold mb-4 text-center text-purple-600">
+                {project.title}
+              </h3>
+
+              {project.comingSoon && (
+                <span className="inline-block bg-yellow-500 text-black px-2 py-1 rounded-full text-sm mb-2">
+                  Bientôt disponible
+                </span>
+              )}
+              <p className="mb-1">
+                <span className="font-medium">Rôle:</span> {project.role}
+              </p>
+              <p className="mb-2">
+                <span className="font-medium">Résumé:</span> {project.resume}
+              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {project.technologies.map((image, index) => (
+                  <div
+                    key={index}
+                    className="w-20 h-20 rounded-4xl overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-125"
+                  >
+                    <img
+                      src={image}
+                      alt="technologies"
+                      className="object-contain w-full h-full"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {!project.comingSoon && (
+                <div className="mt-4">
+                  <a
+                    href={project.link || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-400 hover:text-blue-600 font-medium"
+                  >
+                    <i className="fas fa-globe"></i> Voir le projet{" "}
+                    <i className="fas fa-external-link-alt text-sm"></i>
+                  </a>
                 </div>
-              ))}
-            </div>
-          </li>
-        ))}
-      </ul>
-    </section>
+              )}
+            </li>
+          ))}
+        </ul>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+      </section>
+      <Footer />
+    </>
   );
 }
 

@@ -1,9 +1,18 @@
+import Navbar from "../components/Navbar";
+
+import Footer from "../components/Footer";
+
 function Contact() {
   return (
-    <form action="/send" method="GET">
-      <div></div>
-      <div></div>
-      <div></div>
-    </form>
+    <>
+      <Navbar />
+      <form action="/send" method="GET">
+        <div></div>
+        <div></div>
+        <div></div>
+      </form>
+      <Footer />
+    </>
   );
 }
+export default Contact;

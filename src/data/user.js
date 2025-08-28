@@ -1,4 +1,4 @@
-import yawoImage from '../images/yawo.png'; // chemin relatif depuis ton fichier JS
+import yawoImage from '../images/yawo.png';
 
 
 const user =
