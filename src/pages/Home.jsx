@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -15,12 +16,12 @@ function Home() {
               <Hero />
 
               <div className="mt-8">
-                <a
-                  href="/projects"
+                <Link
+                  to="/projects"
                   className="inline-block px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-3xl shadow hover:bg-blue-700 transition"
                 >
                   Voir mes projets
-                </a>
+                </Link>
               </div>
             </div>
           </section>
