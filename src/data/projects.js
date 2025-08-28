@@ -28,7 +28,7 @@ const projects = [
         role: 'Back-End Developer – Appointment Booking Application',
         resume: 'Développement d’un écosystème synchronisé comprenant une application bureau pour les administrateurs (création de prestations, créneaux, suivi des rendez-vous) et un site web public pour la prise de rendez-vous en ligne (Visio ou présentiel) avec synchronisation des données en temps réel via MySQL (Mars 2025, Durée : 3 mois)',
         github: "https://github.com/HexaNexus28/skyndar",
-        demo: "../../public/videos/skyndar.mp4",
+        demo: "../../public/videos/Skyndar.mp4",
         comingSoon: false
 
     },
@@ -49,7 +49,7 @@ const projects = [
         role: 'FullStack Developer',
         resume: 'Réalisé pour un client : journal éducatif interactif. Les utilisateurs lisent, likent, commentent, explorent catégories et écoutent podcasts, pendant que l’admin contrôle tout le contenu.',
         github: "",
-        demo: "../../public/videos/JE_2.mp4",
+        demo: "../../public/videos/JE.mp4",
         comingSoon: false
     }, {
         id: 11,
