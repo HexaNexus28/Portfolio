@@ -1,13 +1,13 @@
-import js from '../images/js_2.jpeg';
-import html from '../images/html.webp';
-import css from '../images/css.webp';
-import php from '../images/php.webp';
-import csharp from '../images/csharp.jpeg';
-import nodesjs from '../images/nodejs.webp';
+import js from '../images/js.svg';
+import html from '../images/html.svg';
+import css from '../images/css.svg';
+import php from '../images/php.svg';
+import csharp from '../images/csharp.svg';
+import nodesjs from '../images/nodejs.svg';
 import reactImg from '../assets/react.svg';
-import mysql from '../images/mysql.webp';
-import wpf from '../images/wpf.webp';
-import tailwindcss from '../images/tailwindcss.webp';
+import mysql from '../images/mysql.svg';
+import wpf from '../images/wpf.svg';
+import tailwindcss from '../images/tailwind.svg';
 const projects = [
 
     {

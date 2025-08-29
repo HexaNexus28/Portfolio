@@ -14,7 +14,7 @@ function About() {
             className="w-full h-full object-cover object-top scale-110 transition-transform duration-500 hover:scale-125"
           />
         </div>
-        <h1 className="text-5xl font-bold mb-10 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <h1 className="text-2xl font-bold mb-10 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           Yawo Zoglo
         </h1>
         <p className="text-xl text-center max-w-3xl mb-8 text-gray-300">

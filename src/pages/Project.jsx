@@ -35,11 +35,11 @@ function Project() {
               <p className="mb-2">
                 <span className="font-medium">Résumé:</span> {project.resume}
               </p>
-              <div className="flex flex-wrap gap-2 mt-2">
+              <div className="flex flex-wrap gap-4 mt-8 ">
                 {project.technologies.map((image, index) => (
                   <div
                     key={index}
-                    className="w-20 h-20 rounded-4xl overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-125"
+                    className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-125"
                   >
                     <img
                       src={image}
@@ -52,7 +52,6 @@ function Project() {
 
               {!project.comingSoon && (
                 <div className="mt-6 flex flex-wrap gap-4 justify-center">
-                  {/* Bouton GitHub */}
                   {project.github && (
                     <a
                       href={project.github}

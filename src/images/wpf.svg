@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="18" y="22" width="92" height="84" rx="6" fill="#0078d7"></rect>
+  <rect x="26" y="30" width="36" height="28" rx="4" fill="#fff" opacity="0.2"></rect>
+  <rect x="26" y="64" width="36" height="40" rx="4" fill="#fff" opacity="0.1"></rect>
+  <text x="84" y="82" font-family="Segoe UI, sans-serif" font-size="12" fill="#fff" text-anchor="middle">WPF</text>
+</svg>
