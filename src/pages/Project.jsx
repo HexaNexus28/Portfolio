@@ -39,7 +39,7 @@ function Project() {
                 {project.technologies.map((image, index) => (
                   <div
                     key={index}
-                    className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-125"
+                    className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center transition-transform duration-300 hover:scale-125"
                   >
                     <img
                       src={image}
