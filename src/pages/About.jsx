@@ -18,7 +18,7 @@ function About() {
           Yawo Zoglo
         </h1>
         <p className="text-xl text-center max-w-3xl mb-8 text-gray-300">
-          Apprenti <strong>Développeur Web & Mobile</strong> à l’ESIEA, j’aime
+          Apprenti <strong>Développeur Fullstack </strong> à l’ESIEA, j’aime
           donner vie à des idées : transformer des lignes de code en expériences
           fluides, utiles et parfois un peu ludiques.
         </p>
