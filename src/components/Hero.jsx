@@ -13,7 +13,7 @@ function Hero() {
       </div>
 
       <h1 className="text-3xl font-bold mb-4 drop-shadow-lg">
-        Salut, je suis {user.firstname} {user.lastname}
+        Bonjour, je suis {user.firstname} {user.lastname}
       </h1>
       <TypeAnimation
         sequence={[
