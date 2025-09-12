@@ -52,7 +52,7 @@ const projects = [
         role: 'FullStack Developer',
         resume: 'Réalisé pour un client : journal éducatif interactif. Les utilisateurs lisent, likent, commentent, explorent catégories et écoutent podcasts, pendant que l’admin contrôle tout le contenu.',
         github: "",
-        demo: "",
+        demo: "https://journaleducatif.com/",
         comingSoon: false
     }, {
         id: 11,
