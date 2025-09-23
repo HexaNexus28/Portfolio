@@ -1,11 +1,23 @@
 import projects from "../data/projects";
 import Navbar from "../components/Navbar";
-
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet"; // <-- Import Helmet
 
 function Project() {
   return (
     <>
+      <Helmet>
+        <title>Yawo Zoglo | Projets</title>
+        <meta
+          name="description"
+          content="Découvrez les projets de Yawo Zoglo, développeur fullstack passionné par React, Node.js et technologies web."
+        />
+        <meta
+          name="keywords"
+          content="Yawo Zoglo, projets, portfolio, développeur, React, Node.js, applications web"
+        />
+      </Helmet>
+
       <Navbar />
       <section className="p-8 bg-gray-800 min-h-screen">
         <ul className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">

@@ -2,10 +2,23 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"; // <-- Import Helmet
 
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Yawo Zoglo | Portfolio</title>
+        <meta
+          name="description"
+          content="Portfolio de Yawo Zoglo, développeur fullstack passionné par React, Node.js et projets web innovants."
+        />
+        <meta
+          name="keywords"
+          content="Yawo Zoglo, portfolio, développeur, React, Node.js, projets web"
+        />
+      </Helmet>
+
       <div className="min-h-screen bg-gray-900 text-white">
         <Navbar />
         <main className="px-4 md:px-10">
