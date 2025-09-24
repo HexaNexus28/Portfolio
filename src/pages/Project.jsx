@@ -1,7 +1,7 @@
 import projects from "../data/projects";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Helmet } from "react-helmet"; // <-- Import Helmet
+import { Helmet } from "react-helmet";
 
 function Project() {
   return (
