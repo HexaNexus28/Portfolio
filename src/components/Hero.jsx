@@ -17,11 +17,11 @@ function Hero() {
       </h1>
       <TypeAnimation
         sequence={[
-          "Développeur FullStack",
+          "Développeur Logiciel",
           1000,
           "Je crée des solutions performantes et intuitives",
           1000,
-          "FullStack Developer",
+          "Software Engineer ",
           1000,
           "Building elegant and efficient applications",
           1000,
