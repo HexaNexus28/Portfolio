@@ -16,7 +16,9 @@ const projects = [
         coverimage: '../images/micro-transactions.png',
         technologies: [csharp, nodesjs, mysql, html, css, js],
         role: 'FullStack Developer – ASP.NET Core API + React.Vite',
-        resume: 'Backend sécurisé pour gérer les achats d\'items dans les jeux avec système complet de gestion d\'inventaire et transactions. Architecture moderne avec ASP.NET Core API et interface React.Vite responsive.',
+        problem: 'Besoin d\'un système backend robuste et anti-triche pour gérer les achats in-game et l\'inventaire des joueurs.',
+        solution: 'Conception d\'une API sécurisée avec gestion transactionnelle complète et création d\'un dashboard d\'administration réactif.',
+        impact: 'Architecture scalable prête pour la production, assurant l\'intégrité des données et transactions.',
         github: "https://github.com/HexaNexus28/micro-transactions-app.git",
         demo: "",
         comingSoon: false
@@ -26,8 +28,10 @@ const projects = [
         title: 'Cookify',
         coverimage: '../images/JE.png',
         technologies: [php, mysql, html, css, js],
-        role: 'Back-End Developer & Scrum Master – Cooking Website',
-        resume: 'Développement d\'un site web dynamique permettant de découvrir des recettes, les commenter, les mettre en favoris, et accéder à un tableau de bord personnel avec informations utilisateur, favoris et livres de cuisine. Back-office complet pour la gestion des contenus (2024-2025, Durée : 3 mois)',
+        role: 'Back-End Developer & Scrum Master',
+        problem: 'Absence d\'une plateforme centralisée permettant aux passionnés de cuisine de gérer leurs recettes et favoris.',
+        solution: 'Développement complet d\'une application web communautaire incluant back-office, gestion des utilisateurs et interaction sociale.',
+        impact: 'Mise en production d\'un écosystème fonctionnel en 3 mois avec gestion complète de base de données.',
         github: "https://github.com/HexaNexus28/cookify",
         demo: "",
         comingSoon: false
@@ -37,18 +41,22 @@ const projects = [
         title: 'Skyndar',
         coverimage: '../images/JE.png',
         technologies: [csharp, wpf, php, mysql, html, css, js],
-        role: 'Back-End Developer – Appointment Booking Application',
-        resume: 'Développement d\'un écosystème synchronisé comprenant une application bureau pour les administrateurs (création de prestations, créneaux, suivi des rendez-vous) et un site web public pour la prise de rendez-vous en ligne (Visio ou présentiel) avec synchronisation des données en temps réel via MySQL (Mars 2025, Durée : 3 mois)',
+        role: 'Back-End Developer',
+        problem: 'Gestion complexe et désynchronisée des plannings de rendez-vous (visio et présentiel).',
+        solution: 'Développement d\'un d\'écosystème synchronisé (Application Bureau WPF + Web) gérant les prestations et créneaux.',
+        impact: 'Logiciel assurant une parfaite synchronisation temps-réel, évitant les conflits de rendez-vous pour les professionnels.',
         github: "https://github.com/HexaNexus28/skyndar",
         demo: "",
         comingSoon: true
     },
     {
         id: 4,
-        title: 'Personal Portfolio',
+        title: 'Portfolio B2B',
         technologies: [reactImg, html, tailwindcss, js],
-        role: 'Front-End & React Developer – Personal Portfolio',
-        resume: 'Création d\'un portfolio interactif pour présenter mes projets et compétences, avec navigation fluide via React Router et design responsive pour mobile et desktop',
+        role: 'Front-End React Developer',
+        problem: 'Nécessité de présenter une expertise technique immédiatement compréhensible par des Leads Devs / CTOs.',
+        solution: 'Création d\'une Single Page Application avec React Router, restructurée pour conversion et axée sur la valeur.',
+        impact: 'Interface performante, responsive, avec un parcours utilisateur optimisé pour le recrutement.',
         github: "https://github.com/HexaNexus28/portfolio",
         demo: "https://yawo-portfolio.vercel.app/",
         comingSoon: false
@@ -59,12 +67,13 @@ const projects = [
         coverimage: '../images/JE.png',
         technologies: [php, mysql, html, css, js],
         role: 'FullStack Developer',
-        resume: 'Réalisé pour un client : journal éducatif interactif. Les utilisateurs lisent, likent, commentent, explorent catégories et écoutent podcasts, pendant que l\'admin contrôle tout le contenu.',
+        problem: 'Le client nécessitait une solution interactive d\'articles et podcasts entièrement administrable.',
+        solution: 'Réalisation fullstack sur-mesure d\'un site interactif et de son interface d\'administration sécurisée.',
+        impact: 'Digitalisation réussie du projet client avec déploiement complet et gestion de contenu autonome.',
         github: "",
         demo: "https://journaleducatif.com/",
         comingSoon: false
     }
 ];
-
 
 export default projects;

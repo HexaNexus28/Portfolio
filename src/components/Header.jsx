@@ -46,7 +46,7 @@ function Header() {
                 <span className="text-white font-bold text-lg sm:text-xl">YZ</span>
               </div>
               <span className={`font-bold text-lg sm:text-xl transition-colors duration-300 ${
-                isScrolled ? 'text-white' : 'text-gray-900'
+                isScrolled ? 'text-white' : 'text-gray-200'
               } group-hover:text-blue-400`}>
                 Yawo Zoglo
               </span>
@@ -63,7 +63,7 @@ function Header() {
                       ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
                       : isScrolled
                         ? 'text-gray-300 hover:text-white hover:bg-gray-800/50'
-                        : 'text-gray-700 hover:text-gray-900 hover:bg-gray-200/50'
+                        : 'text-gray-300 hover:text-white hover:bg-gray-800/50'
                   }`}
                 >
                   <i className={`${item.icon} text-sm`}></i>
@@ -81,7 +81,7 @@ function Header() {
                 className={`p-2 rounded-lg transition-all duration-300 ${
                   isScrolled
                     ? 'text-gray-400 hover:text-white hover:bg-gray-800/50'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200/50'
+                    : 'text-gray-300 hover:text-white hover:bg-gray-800/50'
                 }`}
                 title="GitHub"
               >
@@ -94,7 +94,7 @@ function Header() {
                 className={`p-2 rounded-lg transition-all duration-300 ${
                   isScrolled
                     ? 'text-gray-400 hover:text-white hover:bg-gray-800/50'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200/50'
+                    : 'text-gray-300 hover:text-white hover:bg-gray-800/50'
                 }`}
                 title="LinkedIn"
               >
@@ -105,7 +105,7 @@ function Header() {
                 className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                   isScrolled
                     ? 'bg-blue-600 text-white hover:bg-blue-700'
-                    : 'bg-gray-900 text-white hover:bg-gray-800'
+                    : 'bg-blue-600 text-white hover:bg-blue-700 shadow-md'
                 }`}
               >
                 <i className="fas fa-envelope mr-2"></i>
@@ -119,7 +119,7 @@ function Header() {
               className={`lg:hidden p-2 rounded-lg transition-all duration-300 ${
                 isScrolled
                   ? 'text-gray-400 hover:text-white hover:bg-gray-800/50'
-                  : 'text-gray-700 hover:text-gray-900 hover:bg-gray-200/50'
+                  : 'text-white hover:text-blue-400 bg-gray-800/50'
               }`}
             >
               <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
@@ -132,7 +132,7 @@ function Header() {
       <div className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${
         isMobileMenuOpen 
           ? 'bg-gray-900/95 backdrop-blur-md opacity-100 visible' 
-          : 'bg-transparent opacity-0 invisible'
+          : 'bg-transparent opacity-0 pointer-events-none invisible'
       }`}>
         <div className="flex flex-col h-full p-6 pt-24">
           <nav className="flex-1">
@@ -140,6 +140,7 @@ function Header() {
               <Link
                 key={item.path}
                 to={item.path}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className={`flex items-center gap-3 px-4 py-3 rounded-lg font-medium text-lg mb-2 transition-all duration-300 ${
                   isActive(item.path)
                     ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'

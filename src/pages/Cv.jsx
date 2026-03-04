@@ -10,11 +10,16 @@ function Cv() {
           Mon CV
         </h1>
 
-        <iframe
-          src="/CV-v2.pdf"
-          title="Aperçu CV"
-          className="w-full max-w-4xl h-[500px] sm:h-[600px] lg:h-[700px] border-2 border-gray-700 rounded-xl shadow-lg mb-6 sm:mb-8"
-        />
+        <div className="w-full max-w-4xl h-[500px] sm:h-[600px] lg:h-[700px] border-2 border-gray-700 rounded-xl shadow-lg mb-6 sm:mb-8 overflow-hidden bg-gray-800 relative">
+          <p className="absolute inset-0 flex items-center justify-center text-gray-400 px-4 text-center z-0">
+            Aperçu non disponible sur ce navigateur mobile.<br/>Veuillez utiliser le bouton de téléchargement ci-dessous.
+          </p>
+          <iframe
+            src="/CV-v2.pdf"
+            title="Aperçu CV"
+            className="relative z-10 w-full h-full"
+          />
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
           <a
