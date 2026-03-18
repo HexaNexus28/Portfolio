@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
@@ -16,6 +17,7 @@ function App() {
         <Route path="/cv" element={<Cv />} />
       </Routes>
       <ScrollToTop />
+      <Analytics />
     </>
   );
 }
